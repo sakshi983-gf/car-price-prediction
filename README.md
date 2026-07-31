@@ -2,7 +2,7 @@
 
 A machine learning web app that predicts the fair resale price of used cars using an XGBoost regression model trained on real-world CarDekho listing data.
 
-**🔗 Live Demo:** [your-app-name.streamlit.app](#) *(update this link after deployment)*
+**🔗 Live Demo:** [(https://fsgzmyxzxrrivimnrurbbv.streamlit.app/)](#) *(update this link after deployment)*
 
 ---
 
