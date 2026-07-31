@@ -8,11 +8,15 @@ import seaborn as sns
 # -----------------------------
 # Load saved artifacts
 # -----------------------------
-model = joblib.load("model.pkl")
-encoder = joblib.load("encoder.pkl")
-feature_columns = joblib.load("feature_columns.pkl")
-categorical_options = joblib.load("categorical_options.pkl")
-data = pd.read_csv("clean_car_data.csv")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
+model = joblib.load(BASE_DIR / "model.pkl")
+encoder = joblib.load(BASE_DIR / "encoder.pkl")
+feature_columns = joblib.load(BASE_DIR / "feature_columns.pkl")
+categorical_options = joblib.load(BASE_DIR / "categorical_options.pkl")
+data = pd.read_csv(BASE_DIR / "clean_car_data.csv")
 
 st.set_page_config(
     page_title="Car Price Predictor",
